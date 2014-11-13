@@ -67,7 +67,16 @@ public class Negocio {
        return msg;
 		
 	}
-
+	
+	public String noAlta() {
+		String msg;
+		
+		msg= "No posible dar de alta: Matricula repetida";
+		
+		
+		
+		return msg;
+	}
 	
 
 }

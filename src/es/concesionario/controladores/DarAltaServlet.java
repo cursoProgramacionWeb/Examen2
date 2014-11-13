@@ -46,6 +46,16 @@ public class DarAltaServlet extends HttpServlet {
 		Negocio negocio= new Negocio();
 		int id= negocio.darAlta(matricula, marca, modelo, color, numeroCaballos, marchas);
 		
+		String men;
+		if (id==0){
+			men= negocio.noAlta();
+			
+			request.setAttribute("mensaje",men);
+			RequestDispatcher rd= request.getRequestDispatcher("vistaMensaje.jsp");
+		    rd.forward(request, response);
+		}
+		
+		
 		//CAMINO DE VUELTA DE LA BD
 		
 		Vehiculo v= negocio.consultarUno(id);

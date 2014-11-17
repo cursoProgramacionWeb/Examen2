@@ -11,7 +11,15 @@ public class Negocio {
 
 	public int darAlta(String matricula, String marca, String modelo,
 			String color, int numeroCaballos, boolean marchas) {
-		
+		/*
+		 * 
+		 * 
+		 * MENSAJE AGREGADO POR MANUEL
+		 * 
+		 * 
+		 * 
+		 * 
+		 */
 		Vehiculo vehiculo= new Vehiculo(matricula, marca, modelo, color, numeroCaballos, marchas);
 		int id= vehiculodao.darAlta(vehiculo);
 		

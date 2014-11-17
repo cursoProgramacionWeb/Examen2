@@ -30,7 +30,13 @@ public class Negocio {
 
 	public Vehiculo consultarUno(int id) {
 		Vehiculo vehiculo= vehiculodao.consultarUno(id);
-				
+			/*
+			 * cambio agregado por manuel 
+			 * rama mgac
+			 * 
+			 * 
+			 * 
+			 * */	
 		return vehiculo;
 	}
 
